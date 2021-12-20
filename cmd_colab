@@ -1,0 +1,8 @@
+!git clone https://github.com/Abishek1710/VideoColorization.git
+%cd /content/VideoColorization
+!mkdir output
+import glob
+import os
+for path in glob.glob("/content/VideoColorization/input/*"):
+  os.environ['tbd']=path
+  !python main.py -i $tbd -o output/
